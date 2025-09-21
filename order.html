@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now for delicious food</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <!-- Navigation bar -->
+  <nav>
+      <div class="logo">
+    <img src="logo.jpg" alt="JoweriahCaterers Logo">
+  </div>
+  <div class="logo">JOWERIAH CATERERS</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="order.html">Order</a></li>
+    <li><a href="contactus.html">Contact</a></li>
+  </ul>
+</nav>
+  <!-- order form section -->
+   <section class="order-form">
+  <h2>Place Your Order</h2>
+  <form onsubmit="return demoSubmit(event)">
+    <label for="name" style="color:white">Full Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+    <label for="phone" style="color:white">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" placeholder="e.g. 0700000000" required><br><br>
+
+   <label style="color:white">Select Your Food Items:</label><br>
+<div class="checkbox-group">
+  <div class="menu-section">
+    <p>Main meal dishes</p>
+    <label><input type="checkbox" name="food" value="matooke"> Steamed matooke</label>
+    <label><input type="checkbox" name="food" value="Posho"> Posho/Ugali</label>
+    <label><input type="checkbox" name="food" value="Rice"> Rice</label>
+    <label><input type="checkbox" name="food" value="Yam"> Yam</label>
+    <label><input type="checkbox" name="food" value="Pumpkin"> Pumpkin</label>
+    <label><input type="checkbox" name="food" value="Cassava"> Cassava</label>
+  </div>
+
+  <div class="menu-section">
+    <p>Protein and soup dishes</p>
+    <label><input type="checkbox" name="food" value="chicken stew"> Chicken Stew</label>
+    <label><input type="checkbox" name="food" value="Beef"> Beef Stew</label>
+    <label><input type="checkbox" name="food" value="Fish"> Fish stew</label>
+    <label><input type="checkbox" name="food" value="Beans"> Bean Stew</label>
+  </div>
+
+  <div class="menu-section">
+    <p>Snacks</p>
+    <label><input type="checkbox" name="food" value="Samosa"> Samosas</label>
+    <label><input type="checkbox" name="food" value="Rolex"> Rolex</label>
+    <label><input type="checkbox" name="food" value="Mandazi"> Mandazi</label>
+    <label><input type="checkbox" name="food" value="Chapati"> Chapati</label>
+  </div>
+
+  <div class="menu-section">
+    <p>Side dishes</p>
+    <label><input type="checkbox" name="food" value="Fries"> French fries</label>
+    <label><input type="checkbox" name="food" value="Wedges"> Potato wedges</label>
+  </div>
+
+  <div class="menu-section">
+    <p>Juice</p>
+    <label><input type="checkbox" name="food" value="mango"> Mango</label>
+    <label><input type="checkbox" name="food" value="Orange"> Orange</label>
+    <label><input type="checkbox" name="food" value="Watermelon"> Watermelon</label>
+    <label><input type="checkbox" name="food" value="Passion"> Passion</label>
+    <label><input type="checkbox" name="food" value="Cocktail"> Cocktail</label>
+  </div>
+
+  <div class="menu-section">
+    <p>Dessert</p>
+    <label><input type="checkbox" name="food" value="Milkshake"> Milkshake</label>
+    <label><input type="checkbox" name="food" value="Cake"> Cake slice</label>
+  </div>
+</div>
+<label for="specify" style="color:white">Order specifications:</label><br>
+    <textarea id="specify" name="address" rows="3" placeholder="Enter detailed order specifications e.g spicy or non-spiced" required></textarea><br><br>
+
+
+    <label for="address" style="color:white">Delivery Address:</label><br>
+    <textarea id="address" name="address" rows="3" placeholder="Enter delivery address" required></textarea><br><br>
+
+    <button type="submit">Submit Order</button>
+  </form>
+
+  <!-- Confirmation message -->
+  <p id="confirmation" style="display:none; margin-top:15px; color:#ffb86b; font-weight:bold;">
+    ✅ Thank you! Your order has been received.
+  </p>
+</section>
+<footer>
+    <p>&copy; 2025 Joweriah Caterers | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
